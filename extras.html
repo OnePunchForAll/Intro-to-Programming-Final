@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>extras</title>
+    <!--Reference to kit that provides extra functionality to <nav> from the youtube tutorial-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Link/Connection to the CSS file that holds all aesthetic values (unless manually typed in html as <style>)-->
     <link rel="stylesheet" href="block.css">
+    <!--Javascript file that holds all of the functions necessary to provide calculations necessary for the HTML-->
     <script src="block.js"></script>
 </head>
 
 <body>
+    <!--Navigation for the class: extras-->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -27,15 +31,36 @@
             <li><a href="extras.html">Extras</a></li>
         </ul>
     </nav>
+    <!--Section that contains a table to 'contain' the buttons and containers -->
     <section class="extras" :hover :active>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/z0pqEs9qklE" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <!--buttons that allow user to push off and the other turns on and vice versa infinitely-->
-        <button id="startButton" onclick="start()">Start</button>
-        <button id="stopButton" onclick="stop()">Stop</button>
+        <table class="extraData"></table>
+        <table id="extra" border=0 width="100%">
+            <col style="width: 50%">
+            <col style="width: 30%">
+            <col style="width: 30%">
+            <th>Youtube</th>
+            <th>Buttons</th>
+            <th>Array</th>
+            <tbody>
+                <tr>
+                    <td>
+                        <!--A video container that shows another student's youtube demonstration of their final project-->
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/z0pqEs9qklE" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </td>
+                    <td> <!--Buttons that allow user to push off and the other turns on and vice versa infinitely-->
+                        <button id="startButton" onclick="start()">Start</button>
+                        <button id="stopButton" onclick="stop()">Stop</button>
+                    </td>
+                    <td> <!--Array made to provide hostile mob names to the user-->
+                        <button onclick="Array()">Which hostile mob is your favorite?</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 </body>
 

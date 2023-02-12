@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <!--Reference to kit that provides extra functionality to <nav> from the youtube tutorial-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Link/Connection to the CSS file that holds all aesthetic values (unless manually typed in html as <style>)-->
     <link rel="stylesheet" href="block.css">
+    <!--Javascript file that holds all of the functions necessary to provide calculations necessary for the HTML-->
     <script src="block.js"></script>
 </head>
 
 <body>
+    <!--Navigation for the class: index-->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -31,22 +35,18 @@
         <!--Login authentication action-->
         <p id="loginStatus" class="loginID">Status of login...</p>
 
-        <!--Form to allow students to input their first, last and badge numbers to have access-->
+        <!--Form to allow students to input their first, last and block numbers to have access-->
         <form id="credSubmt" onsubmit="return false">
             First name: <input type="text" id="firstName" />
 
             Last name: <input type="text" id="lastName" />
 
-            Badge number: <input type="number" id="badgeNumber" />
+            Badge number: <input type="number" id="blockNumber" />
             <input type="submit" onclick="checkCreds();" />
         </form>
-
         <br>
         <br>
         <br>
-
-        <!--Array made to provide hostile mob names to the user-->
-        <button onclick="Array()">Which hostile mob is your favorite?</button>
     </section>
 </body>
 

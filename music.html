@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>music</title>
+    <!--Reference to kit that provides extra functionality to <nav> from the youtube tutorial-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Link/Connection to the CSS file that holds all aesthetic values (unless manually typed in html as <style>)-->
     <link rel="stylesheet" href="block.css">
+    <!--Javascript file that holds all of the functions necessary to provide calculations necessary for the HTML-->
     <script src="block.js"></script>
 </head>
 
 <body>
+    <!--Navigation for the class: music-->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -27,15 +31,16 @@
             <li><a href="extras.html">Extras</a></li>
         </ul>
     </nav>
+    <!--Section that gives the user sound control as well as the link to the artist's original video-->
     <section class="music">
-        <!--audio control plays music from Lena Raine - Otherside-->
+        <!--Audio control plays music from Lena Raine - Otherside-->
         <audio id="musicButton" controls autoplay loop>
             <source src="otherside.mp3" type="audio/mpeg">
         </audio>
         <br>
         <br>
         <br>
-        <!--minecraft sound reference-->
+        <!--Minecraft sound reference-->
         <h6><a href="https://www.youtube.com/watch?v=kK81m-A3qpU">Music by Lena Raine</h6>
     </section>
 </body>

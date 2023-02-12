@@ -2,13 +2,13 @@ function checkCreds() {
     alert("Checking credentials...");
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
-    var badgeNumber = document.getElementById("badgeNumber").value;
+    var badgeNumber = document.getElementById("blockNumber").value;
     var fullName = firstName + " " + lastName;
     if (fullName.length > 20 || fullName.length < 4) {
         document.getElementById("loginStatus").innerHTML = "Invalid first and last name";
     }
     else if (badgeNumber > 20 || badgeNumber < 2) {
-        document.getElementById("loginStatus").innerHTML = "Number of Badge Numbers is an invalid number";
+        document.getElementById("loginStatus").innerHTML = "Number of Block Numbers is an invalid number";
     }
     else {
         alert("Access Granted, Welcome " + fullName + "!");
@@ -18,12 +18,12 @@ function checkCreds() {
 
 function Array() {
     var arrayOfNames = ["Ghast", "Phantom", "Magma Cube", "Slime", "Dragon"];
-    for (s=0; s< arrayOfNames.length; s++) {
+    for (s = 0; s < arrayOfNames.length; s++) {
         alert(arrayOfNames[s]);
     }
     arrayOfNames.some(hostileMobs => alert(hostileMobs));
     arrayOfNames.push("Piglin Brute");
-    for (s=0; s< arrayOfNames.length; s++) {
+    for (s = 0; s < arrayOfNames.length; s++) {
         alert(arrayOfNames[s]);
     }
     var shoppingList = ["Creeper", "Spider", "Skeleton", "Zombie", "Piglin"];
@@ -34,13 +34,13 @@ function Array() {
 }
 
 function start() {
-    document.getElementById("startButton").disabled=true;
-    document.getElementById("stopButton").disabled=false;
+    document.getElementById("startButton").disabled = true;
+    document.getElementById("stopButton").disabled = false;
 }
 
 function stop() {
-    document.getElementById("stopButton").disabled=true;
-    document.getElementById("startButton").disabled=false;
+    document.getElementById("stopButton").disabled = true;
+    document.getElementById("startButton").disabled = false;
 }
 
 //Creates an alert

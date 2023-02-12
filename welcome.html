@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
+    <!--Reference to kit that provides extra functionality to <nav> from the youtube tutorial-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Link/Connection to the CSS file that holds all aesthetic values (unless manually typed in html as <style>)-->
     <link rel="stylesheet" href="block.css">
+    <!--Javascript file that holds all of the functions necessary to provide calculations necessary for the HTML-->
     <script src="block.js"></script>
 </head>
 
 <body>
+    <!--Navigation for the class: welcome-->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -28,17 +32,46 @@
         </ul>
     </nav>
     <section class="welcome">
-        <!--Two UAT space logos placed as images-->
-        <img align="left" src="UATspaceLogo-2.jpg">
-        <img align="top" src="UATspaceLogo-2.jpg">
-        <img align="top" src="UATspaceLogo-2.jpg">
-        <img align="top" src="UATspaceLogo-2.jpg">
-        <img align="left" src="UATspaceLogo-2.jpg">
-        <img align="top" src="UATspaceLogo-2.jpg">
-        <img align="top" src="UATspaceLogo-2.jpg">
-        <img align="top" src="UATspaceLogo-2.jpg">
-        <!--Heading letting the user know where to use the countdown timer-->
-        <h6>Test our Creeper Countdown in the next section!!!</h6>
+        <!--8 UAT space logos placed as images and then put in a table!-->
+        <table class="extraData"></table>
+        <table id="extra" border=100 width="100%">
+            <col style="width: 25%">
+            <col style="width: 25%">
+            <col style="width: 25%">
+            <col style="width: 25%">
+            <th>UAT Space Logo!</th>
+            <tbody>
+                <tr>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                    <td>
+                        <img align="center" src="UATspaceLogo-2.jpg">
+                    </td>
+                </tr>
+            </tbody>
+            <!--Heading letting the user know where to use the countdown timer-->
+            <h6>Test our Creeper Countdown on the next page!!!</h6>
     </section>
 </body>
 
