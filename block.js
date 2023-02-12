@@ -1,3 +1,17 @@
+//Functions that allow the user to see the student's name after clicking the buttons
+function studentName() {
+    alert("Student name is");
+    document.getElementById("startButton").disabled = true;
+    document.getElementById("stopButton").disabled = false;
+}
+
+function is() {
+    alert("Seth Christopher");
+    document.getElementById("stopButton").disabled = true;
+    document.getElementById("startButton").disabled = false;
+}
+
+//Function that checks if the user enters the right amount of characters to avoid not having access
 function checkCreds() {
     alert("Checking credentials...");
     var firstName = document.getElementById("firstName").value;
@@ -16,6 +30,7 @@ function checkCreds() {
     }
 }
 
+//Function that forces the user to click many alerts in a almost randomized order however, each is pulled from an array function
 function Array() {
     var arrayOfNames = ["Ghast", "Phantom", "Magma Cube", "Slime", "Dragon"];
     for (s = 0; s < arrayOfNames.length; s++) {
@@ -31,16 +46,6 @@ function Array() {
     shoppingList.sort();
     shoppingList.forEach(elementJC => alert(elementJC));
     arrayOfNames.push("Enderman");
-}
-
-function start() {
-    document.getElementById("startButton").disabled = true;
-    document.getElementById("stopButton").disabled = false;
-}
-
-function stop() {
-    document.getElementById("stopButton").disabled = true;
-    document.getElementById("startButton").disabled = false;
 }
 
 //Creates an alert

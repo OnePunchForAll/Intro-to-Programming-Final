@@ -1,3 +1,4 @@
+<!--Seth Christopher-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>creeperCountdown</title>
+    <!--Reference to kit that provides extra functionality to <nav> from the youtube tutorial-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Link/Connection to the CSS file that holds all aesthetic values (unless manually typed in html as <style>)-->
     <link rel="stylesheet" href="block.css">
+    <!--Javascript file that holds all of the functions necessary to provide calculations necessary for the HTML-->
     <script src="block.js"></script>
 </head>
 
 <body>
+    <!--Navigation for the class: creeperCountdown-->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -27,19 +32,18 @@
             <li><a href="extras.html">Extras</a></li>
         </ul>
     </nav>
+    <!--Section that contains countdown timer function when the user clicks 'Seconds to live!'-->
     <section class="creeperCountdown">
-        <!--Creates the alert whenever you visit this website-->
-        <script>alert("Enjoy viewing the UAT Space Program website!");</script>
+        <!--Creates the alert whenever you visit this section-->
+        <script>alert("Don't let the creeper catch you!");</script>
         <!--Buttons that call functions, upon an event taking place, and provide a title to each one-->
         <!--ID for the coundownTimer-->
-        <p id="countdownTimer">Countdown goes here</p>
-        <button onclick="pushalert()" class="push">Punch Now</button>
-        <br>
+        <p id="countdownTimer">Amount of seconds you have before...</p>
+        <button onclick="pushalert()" class="push">Punch Me</button>
         <button onclick="update()" class="update">Apple Tree</button>
-        <br>
         <!--ID for the apple-->
         <p id="update">Apple is here</p>
-        <button onclick="forLoopCountDown()" class="countdownTimer">Start the Count Down!</button>
+        <button onclick="forLoopCountDown()" class="countdownTimer">Seconds to live!</button>
     </section>
 </body>
 
