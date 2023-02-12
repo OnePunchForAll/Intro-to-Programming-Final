@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="block.css">
+    <script src="block.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Blocks</label>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="creeperCountdown.html">Creeper Countdown</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="extras.html">Extras</a></li>
+        </ul>
+    </nav>
+    <section class="index">
+        <!--Login authentication action-->
+        <p id="loginStatus" class="loginID">Status of login...</p>
+
+        <!--Form to allow students to input their first, last and badge numbers to have access-->
+        <form id="credSubmt" onsubmit="return false">
+            First name: <input type="text" id="firstName" />
+
+            Last name: <input type="text" id="lastName" />
+
+            Badge number: <input type="number" id="badgeNumber" />
+            <input type="submit" onclick="checkCreds();" />
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <!--Array made to provide hostile mob names to the user-->
+        <button onclick="Array()">Which hostile mob is your favorite?</button>
+    </section>
+</body>
+
+</html>

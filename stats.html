@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stats</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="block.css">
+    <script src="block.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Blocks</label>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="creeperCountdown.html">Creeper Countdown</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="extras.html">Extras</a></li>
+        </ul>
+    </nav>
+    <section class="stats">
+        <!--table that contains mc data from vh stats-->
+        <table class="tableData"></table>
+        <table id="data" border=5 width="100%">
+            <col style="width: 10%">
+            <col style="width: 10%">
+            <col style="width: 50%">
+            <col style="width: 20%">
+            <col style="width: 10%">
+            <th>Rank</th>
+            <th>Type</th>
+            <th>Action</th>
+            <th>Score</th>
+            <th>Symbol</th>
+            <tbody>
+                <tr>
+                    <td>#8</td>
+                    <td>Archeologist</td>
+                    <td>Ancient Debris mined</td>
+                    <td>141</td>
+                    <td><img src="table pics/debris.png" height=20 width=20></td>
+                </tr>
+                <tr id="bamboo">
+                    <td>#6</td>
+                    <td>Bamboozled</td>
+                    <td>Bamboo harvested</td>
+                    <td>23,626</td>
+                    <td><img src="table pics/bamboo.png" height=20 width=20></td>
+                </tr>
+                <tr id="cook">
+                    <td>#4</td>
+                    <td>Chef</td>
+                    <td>Smoker interactions</td>
+                    <td>821</td>
+                    <td><img src="table pics/cook.png" height=20 width=20></td>
+                </tr>
+                <tr id="bell">
+                    <td>#2</td>
+                    <td>Ding Dong Ditch</td>
+                    <td>Bells rung</td>
+                    <td>1,108,703</td>
+                    <td><img src="table pics/bell.png" height=20 width=20></td>
+                </tr>
+                <tr id="redstone">
+                    <td>#7</td>
+                    <td>Electrician</td>
+                    <td>Redstone items placed</td>
+                    <td>4,041</td>
+                    <td><img src="table pics/redstone.png" height=20 width=20></td>
+                </tr>
+                <tr id="banner">
+                    <td>#4</td>
+                    <td>Flying Flags</td>
+                    <td>Banners placed</td>
+                    <td>351</td>
+                    <td><img src="table pics/banner.png" height=20 width=20></td>
+                </tr>
+                <tr id="glass">
+                    <td>#10</td>
+                    <td>Glassbreaker</td>
+                    <td>Glass broken</td>
+                    <td>2,665</td>
+                    <td><img src="table pics/glass.png" height=20 width=20></td>
+                </tr>
+                <tr id="firework">
+                    <td>#48</td>
+                    <td>Happy New Year!</td>
+                    <td>Fireworks started</td>
+                    <td>936</td>
+                    <td><img src="table pics/firework.png" height=20 width=20></td>
+                </tr>
+                <tr id="kelp">
+                    <td>#10</td>
+                    <td>I Need Kelp!</td>
+                    <td>Kelp mined</td>
+                    <td>2,103</td>
+                    <td><img src="table pics/kelp.png" height=20 width=20></td>
+                </tr>
+                <tr id="bar">
+                    <td>#18</td>
+                    <td>Jailer</td>
+                    <td>Iron bars and chains placed</td>
+                    <td>213</td>
+                    <td><img src="table pics/bar.png" height=20 width=20></td>
+                </tr>
+                <tr id="creeper">
+                    <td>#9</td>
+                    <td>Keboom!</td>
+                    <td>Times killed by Creepers</td>
+                    <td>17</td>
+                    <td><img src="table pics/creeper.png" height=20 width=20></td>
+                </tr>
+                <tr id="grass">
+                    <td>#34</td>
+                    <td>Lawnmower</td>
+                    <td>Grass removed</td>
+                    <td>1,254</td>
+                    <td><img src="table pics/grass.png" height=20 width=20></td>
+                </tr>
+                <tr id="music">
+                    <td>#1</td>
+                    <td>Musician</td>
+                    <td>Note block interactions</td>
+                    <td>1,643,899</td>
+                    <td><img src="table pics/music.png" height=20 width=20></td>
+                </tr>
+                <tr id="spawner">
+                    <td>#11</td>
+                    <td>Nope!</td>
+                    <td>Spawners removed</td>
+                    <td>10</td>
+                    <td><img src="table pics/spawner.png" height=20 width=20></td>
+                </tr>
+                <tr id="tool">
+                    <td>#9</td>
+                    <td>Oh Snap</td>
+                    <td>Tools broken</td>
+                    <td>118</td>
+                    <td><img src="table pics/tool.png" height=20 width=20></td>
+                </tr>
+                <tr id="fire">
+                    <td>#2</td>
+                    <td>Pyromaniac</td>
+                    <td>Fires started</td>
+                    <td>4,906</td>
+                    <td><img src="table pics/fire.png" height=20 width=20></td>
+                </tr>
+                <tr id="quartz">
+                    <td>#15</td>
+                    <td>Quartz</td>
+                    <td>Nether Quartz Ore mined</td>
+                    <td>2,140</td>
+                    <td><img src="table pics/quartz.png" height=20 width=20></td>
+                </tr>
+                <tr id="redore">
+                    <td>#9</td>
+                    <td>Redstone Miner</td>
+                    <td>Redstone Ore mined</td>
+                    <td>1,767</td>
+                    <td><img src="table pics/redore.png" height=20 width=20></td>
+                </tr>
+                <tr id="turtle">
+                    <td>#2</td>
+                    <td>Super Mario</td>
+                    <td>Turtles killed</td>
+                    <td>159</td>
+                    <td><img src="table pics/turtle.png" height=20 width=20></td>
+                </tr>
+                <tr id="greenarmor">
+                    <td>#4</td>
+                    <td>Turtlehead</td>
+                    <td>Turtle Helmets crafted</td>
+                    <td>6</td>
+                    <td><img src="table pics/greenarmor.png" height=20 width=20></td>
+                </tr>
+                <tr id="guardian">
+                    <td>#38</td>
+                    <td>Underwater Raider</td>
+                    <td>Guardians killed</td>
+                    <td>21</td>
+                    <td><img src="table pics/guardian.png" height=20 width=20></td>
+                </tr>
+                <tr id="vegetable">
+                    <td>#8</td>
+                    <td>Vegetarian</td>
+                    <td>Veggie items eaten</td>
+                    <td>9,650</td>
+                    <td><img src="table pics/vegetable.png" height=20 width=20></td>
+                </tr>
+                <tr id="craft">
+                    <td>#6</td>
+                    <td>Workshop</td>
+                    <td>Tools crafted</td>
+                    <td>992</td>
+                    <td><img src="table pics/craft.png" height=20 width=20></td>
+                </tr>
+                <tr id="zombie">
+                    <td>#30</td>
+                    <td>Zombie Grinder</td>
+                    <td>Zombies/Husks/Drowned killed</td>
+                    <td>830</td>
+                    <td><img src="table pics/zombie.png" height=20 width=20></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

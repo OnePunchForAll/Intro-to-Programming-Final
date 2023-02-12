@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extras</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="block.css">
+    <script src="block.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Blocks</label>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="creeperCountdown.html">Creeper Countdown</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="extras.html">Extras</a></li>
+        </ul>
+    </nav>
+    <section class="extras" :hover :active>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/z0pqEs9qklE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!--buttons that allow user to push off and the other turns on and vice versa infinitely-->
+        <button id="startButton" onclick="start()">Start</button>
+        <button id="stopButton" onclick="stop()">Stop</button>
+    </section>
+</body>
+
+</html>
